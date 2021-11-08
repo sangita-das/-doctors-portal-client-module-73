@@ -31,16 +31,20 @@ const Navigation = () => {
                     <Link to="/appointment"><Button color="inherit">Appointment</Button></Link>
                     {
                         user?.email ?
-                            <Button onClick={logout} color="inherit" > Logout</Button>
-
+                            <Box>
+                                <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/dashboard">
+                                    <Button color="inherit">Dashboard</Button>
+                                </NavLink>
+                                <Button onClick={logout} color="inherit">Logout</Button>
+                            </Box>
                             :
-
-                            <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/login"><Button color="inherit">Login</Button></NavLink>
+                            <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/login">
+                                <Button color="inherit">Login</Button>
+                            </NavLink>
                     }
-
                 </Toolbar>
             </AppBar>
-        </Box >
+        </Box>
     );
 };
 

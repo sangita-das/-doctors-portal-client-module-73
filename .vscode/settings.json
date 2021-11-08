@@ -1,0 +1,20 @@
+{
+  "emmet.includeLanguages": {
+    "html": "html",
+    "javascript": "html",
+    "vue-html": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "json.schemas": [
+    {
+      "exclude": [
+        "node_modules"
+      ]
+    }
+  ],
+  "files.associations": {
+    "*.react.js": "javascriptreact",
+    "*.jsx": "javascriptreact",
+    "*.js": "javascriptreact",
+  }
+}
